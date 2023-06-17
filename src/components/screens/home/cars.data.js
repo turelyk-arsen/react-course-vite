@@ -11,4 +11,10 @@ export const cars = [
         price: 29970,
         image: '/public/1.jfif'
     },
+    {
+        id: 3,
+        name: 'Honda Civic 2',
+        price: 39970,
+        image: '/public/1.jfif'
+    },
 ]

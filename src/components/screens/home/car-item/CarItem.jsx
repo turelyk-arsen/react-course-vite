@@ -1,15 +1,15 @@
 import styles from "../Home.module.css";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 
 const CarItem = ({ car }) => {
-  CarItem.propTypes = {
-    car: PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      image: PropTypes.string.isRequired,
-      name: PropTypes.string.isRequired,
-      price: PropTypes.number.isRequired,
-    }).isRequired,
-  };
+  // CarItem.propTypes = {
+  //   car: PropTypes.shape({
+  //     id: PropTypes.number.isRequired,
+  //     image: PropTypes.string.isRequired,
+  //     name: PropTypes.string.isRequired,
+  //     price: PropTypes.number.isRequired,
+  //   }).isRequired,
+  // }; 
   return (
     <div key={car.id} className={styles.item}>
       <div

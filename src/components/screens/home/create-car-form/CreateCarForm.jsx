@@ -6,7 +6,6 @@ const CreateCarForm = ({ setCars }) => {
   // const [name, setName] = useState('')
   // const [price, setPrice] = useState('')
   // const [image, setImage] = useState('')
-
   const [data, setData] = useState({ name: "", price: "", image: "" });
 
   const createCar = (e) => {

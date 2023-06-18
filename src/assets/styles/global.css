@@ -13,7 +13,9 @@ h1 {
     margin-bottom: 20px;
 }
 .btn {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 6px 40px;
     border: none;
     outline: none;
@@ -21,6 +23,10 @@ h1 {
     transition: all 0.3s ease;
     cursor: pointer;
     margin-top: 8px;
+    text-decoration: none;
+    color: #111;
+    background-color: #fff;
+    max-width: 100px;
 }
 .btn:hover {
     background-color: rgb(163, 163, 217);

@@ -18,7 +18,7 @@ const CarItem = ({ car }) => {
       />
       {/* <img src='/1.jfif' alt='car'/> */}
       <div className={styles.info}>
-        <h2>{car.name}</h2>
+        <h2>{car.title}</h2>
         <p>
           {new Intl.NumberFormat("en-US", {
             style: "currency",

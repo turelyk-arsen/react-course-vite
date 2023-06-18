@@ -6,13 +6,13 @@ const CreateCarForm = ({ setCars }) => {
   // const [name, setName] = useState('')
   // const [price, setPrice] = useState('')
   // const [image, setImage] = useState('')
-  const [data, setData] = useState({ name: "", price: "", image: "" });
+  const [data, setData] = useState({ title: "", price: "", image: "" });
 
   const createCar = (e) => {
     e.preventDefault();
     // setCars(prev => [...prev, {id: prev.length+1, name, price, image}])
     setCars((prev) => [{ id: prev.length + 1, ...data }, ...prev]);
-    setData({ name: "", price: "", image: "" })
+    setData({ title: "", price: "", image: "" })
   };
 
 //   CreateCarForm.propTypes = {
@@ -28,8 +28,8 @@ const CreateCarForm = ({ setCars }) => {
       /> */}
       <input
         placeholder="Name"
-        onChange={(e) => setData(prev =>({...prev, name:e.target.value}))}
-        value={data.name}
+        onChange={(e) => setData(prev =>({...prev, title:e.target.value}))}
+        value={data.title}
       />
       <input
         placeholder="Price"
